@@ -1,0 +1,36 @@
+.wplms_registration_form{position:relative;}
+
+.registration_form{display:none;}
+.registration_form.active{display:flex;
+flex-wrap:wrap !important;
+padding-top:80px !important;}
+.registration_form.active h3.heading {
+    flex:1 0 100% !important;
+}
+.registration_form_progressbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -2rem;
+    width: 100%;
+}
+
+.registration_form_progressbar > * {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.registration_form_progressbar span {
+    padding: 20px 23px;
+    border-radius: 50px;
+    background: var(--border);
+    width:55px;
+    height:55px;  
+}
+.registration_form_progressbar .active span{background:var(--primary); color:var(--primarycolor);}
+
+.registration_form_progressbar:after {content: '';width: 100%;position: absolute;height: 5px;border-radius: 5px;background: var(--border);}
+.registration_form_progressbar li.active:before,
+.registration_form_progressbar li.active:after {
+    background: skyblue
+}
